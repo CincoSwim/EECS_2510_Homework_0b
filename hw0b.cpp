@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-bool chkPrime (int num, int * point){
+bool chkPrime (int num, int* point){
     if (num == 1){
         return true;
     }
@@ -22,7 +22,7 @@ bool chkPrime (int num, int * point){
 
 int main() {
     int numInput, divisibleBy;
-    int * pointer;
+    int* pointer;
     bool isPrime;
     pointer = &divisibleBy;
 
@@ -31,9 +31,9 @@ int main() {
     cout<< endl << "You entered: " << numInput << endl;
     isPrime = chkPrime(numInput, pointer);
     if (isPrime)
-        cout<< "This number is Prime!";
+        cout<< numInput << " number is Prime!";
     if (!isPrime)
-        cout << "This number is not prime, and is divisible by " << *pointer;
+        cout << numInput << " is not prime, because it is divisible by " << *pointer;
 
 
 
