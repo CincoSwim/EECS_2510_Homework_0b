@@ -1,7 +1,16 @@
+//Name: Christopher Pucko
+//Course: EECS 2510 - Non-Linear Data Structures
+//Assignment - Homework 0, Part B
+
 #include <iostream>
 using namespace std;
 
 bool chkPrime (int num, int* point){
+    //Checks if number is prime using remainder division. Value for 1 is hardcoded.
+    //
+    //If the number **is not** prime when checked, the first divisible value is passed
+    //into memory at the pointer.
+
     if (num == 1){
         return true;
     }
